@@ -40,6 +40,7 @@ gem 'spring',        group: :development
 
 gem 'slim-rails'
 gem 'aws-sdk-core'
+gem 'dotenv-rails'
 
 gem 'rspec-rails', group: :test
 gem 'factory_girl', group: :test
