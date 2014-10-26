@@ -1,0 +1,18 @@
+= form_for @endpoint do |f|
+  - if @endpoint.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@endpoint.errors.count, "error")} prohibited this endpoint from being saved:"
+      ul
+        - @endpoint.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :user_id
+    = f.number_field :user_id
+  .field
+    = f.label :platform
+    = f.number_field :platform
+  .field
+    = f.label :arn
+    = f.text_field :arn
+  .actions = f.submit 'Save'

@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong User:
+  = @endpoint.user_id
+p
+  strong Platform:
+  = @endpoint.platform
+p
+  strong Arn:
+  = @endpoint.arn
+
+= link_to 'Edit', edit_endpoint_path(@endpoint)
+'|
+= link_to 'Back', endpoints_path

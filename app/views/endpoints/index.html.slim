@@ -1,0 +1,25 @@
+h1 Listing endpoints
+
+table
+  thead
+    tr
+      th User
+      th Platform
+      th Arn
+      th
+      th
+      th
+
+  tbody
+    - @endpoints.each do |endpoint|
+      tr
+        td = endpoint.user_id
+        td = endpoint.platform
+        td = endpoint.arn
+        td = link_to 'Show', endpoint
+        td = link_to 'Edit', edit_endpoint_path(endpoint)
+        td = link_to 'Destroy', endpoint, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Endpoint', new_endpoint_path
