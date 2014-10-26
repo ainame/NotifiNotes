@@ -24,7 +24,11 @@ class EndpointsController < ApplicationController
   # POST /endpoints
   # POST /endpoints.json
   def create
+    sns = Aws::SNS::Client.new
+    response = sns.create_platform_endpoint(platform_application_arn: Rails.application.secrets.apns_application_arn, token: endpoint_params['device_token'])
+
     @endpoint = Endpoint.new(endpoint_params)
+    @endpoint.arn = response[:endpoint_arn]
 
     respond_to do |format|
       if @endpoint.save
@@ -69,6 +73,6 @@ class EndpointsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def endpoint_params
-      params.require(:endpoint).permit(:user_id, :platform, :device_token, :arn)
+      params.require(:endpoint).permit(:user_id, :platform, :device_token)
     end
 end
