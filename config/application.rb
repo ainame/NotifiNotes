@@ -27,6 +27,6 @@ module NotifiNotes
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.eager_load_paths += %W( #{RAILS_ROOT}/app/notifications })
+    config.eager_load_paths += %W{ #{Rails.root}/app/notifications }
   end
 end
