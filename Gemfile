@@ -43,5 +43,6 @@ gem 'aws-sdk-core'
 gem 'dotenv-rails'
 gem 'push_starter', git: 'git@github.com:ainame/push_starter.git'
 
+gem 'pry-rails', group: [:development, :test]
 gem 'rspec-rails', group: :test
 gem 'factory_girl', group: :test
