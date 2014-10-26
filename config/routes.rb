@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
   resources :users
-
   resources :endpoints
-
   resources :categories
-
   resources :notes
+
+  namespace :api do
+    namespace :v1 do
+      resources :endpoints, only: [ :show, :create, :update, :delete ]
+    end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
