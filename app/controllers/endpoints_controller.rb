@@ -69,6 +69,6 @@ class EndpointsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def endpoint_params
-      params.require(:endpoint).permit(:user_id, :platform, :arn)
+      params.require(:endpoint).permit(:user_id, :platform, :device_token, :arn)
     end
 end

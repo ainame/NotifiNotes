@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :users
   resources :endpoints
-  resources :categories
+
+  resources :users  resources :categories
   resources :notes
 
   namespace :api do

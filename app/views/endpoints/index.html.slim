@@ -5,6 +5,7 @@ table
     tr
       th User
       th Platform
+      th Device token
       th Arn
       th
       th
@@ -15,6 +16,7 @@ table
       tr
         td = endpoint.user_id
         td = endpoint.platform
+        td = endpoint.device_token
         td = endpoint.arn
         td = link_to 'Show', endpoint
         td = link_to 'Edit', edit_endpoint_path(endpoint)
