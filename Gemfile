@@ -39,6 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'slim-rails'
+gem 'aws-sdk-core'
 
 gem 'rspec-rails', group: :test
 gem 'factory_girl', group: :test
