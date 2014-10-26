@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:ainame/push_starter.git
-  revision: 1631859cf3a18d315cc6075fb1a434122beb7432
+  revision: 37dc950b506fed69e888651f4634aa5ed16f8619
   specs:
     push_starter (0.0.1)
       aws-sdk-v1
