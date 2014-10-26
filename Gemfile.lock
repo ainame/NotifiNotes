@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:ainame/push_starter.git
+  revision: 1631859cf3a18d315cc6075fb1a434122beb7432
+  specs:
+    push_starter (0.0.1)
+      aws-sdk-v1
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -33,6 +40,9 @@ GEM
       jamespath (>= 0.5.1)
       multi_json (~> 1.0)
       multi_xml (~> 0.5)
+    aws-sdk-v1 (1.57.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -62,9 +72,12 @@ GEM
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
+    mini_portile (0.6.0)
     minitest (5.4.2)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -152,6 +165,7 @@ DEPENDENCIES
   factory_girl
   jbuilder (~> 2.0)
   jquery-rails
+  push_starter!
   rails (= 4.1.6)
   rspec-rails
   sass-rails (~> 4.0.3)

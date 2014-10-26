@@ -41,6 +41,7 @@ gem 'spring',        group: :development
 gem 'slim-rails'
 gem 'aws-sdk-core'
 gem 'dotenv-rails'
+gem 'push_starter', git: 'git@github.com:ainame/push_starter.git'
 
 gem 'rspec-rails', group: :test
 gem 'factory_girl', group: :test
